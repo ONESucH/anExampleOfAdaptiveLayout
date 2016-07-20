@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 2% 2% 0 2%;
+}
+
+.top-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 15%;
+  background: #08eaa7;
+  padding: 1%;
+  img {
+    float: left;
+    max-width: 70%;
+    max-height: 70%;
+  }
+  ul {
+    line-height: 100%;
+    text-align: center;
+    width: 70%;
+    list-style: none;
+    float: right;
+    border: 1px solid #009688;
+  }
+  li {
+    float: left;
+    padding: 4% 0;
+    display: inline-block;
+    width: 16.659%;
+    height: auto;
+    &:hover {
+      background: rgba(11, 170, 110, 0.47);
+      cursor: pointer;
+    }
+  }
+}
+
+.middle-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: #ffd54e;
+  text-align: center;
+  padding: 1%;
+
+  .information-block {
+    width: 33%;
+    height: auto;
+    float: left;
+    border: 1px solid #00b3ee;
+    h1 {
+      background: #0baa6e;
+      padding: 2%;
+      font-weight: 100;
+    }
+    img {
+      margin-top: 2%;
+      height: 150px;
+      max-width: 60%;
+      max-height: 14%;
+    }
+    p {
+      padding: 5%;
+    }
+  }
+}
+
+.bottom-container {
+  position: relative;
+  vertical-align: bottom;
+  left: 0;
+  right: 0;
+  background: #f95e63;
+  p {
+    padding: 2%;
+  }
+}
+
+/* Ноутбуки */
+@media (max-width: 1280px) {
+  .middle-container {
+    width: auto;
+    height: 42%;
+    padding-bottom: 3%;
+  }
+
+  .top-container ul {
+    float: right;
+    min-width: 43.4%;
+    min-height: 12%;
+    img {
+      width: 35%;
+      height: 35%;
+    }
+    li {
+      min-width: 12%;
+      min-height: 12%;
+      font-size: 1em;
+    }
+  }
+}
+
+/* Планшеты */
+@media (max-width: 780px) {
+  .top-container {
+    img {
+      width: 17%;
+      height: 70%;
+    }
+    li {
+      min-width: 50%;
+      min-height: 50%;
+    }
+  }
+
+  .middle-container {
+    width: auto;
+    height: 83%;
+  }
+
+  .information-block {
+    position: relative;
+    width: 49.4%;
+    height: 20%;
+    min-width: 49.4%;
+    min-height: 20%;
+  }
+
+  .bottom-container {
+    background: #f95e63;
+    text-align: center;
+  }
+}
+
+/* Телефоны */
+@media (max-width: 600px) {
+  .top-container {
+    position: relative;
+    float: none;
+    left: 0;
+    right: 0;
+    height: 19%;
+    background: #08eaa7;
+    padding: 1%;
+    img {
+      text-align: center;
+      border-radius: 50%;
+      float: left;
+      width: 100px;
+      height: 100px;
+      padding-bottom: 2%;
+    }
+    ul {
+      display: block;
+      float: left;
+      position: relative;
+      width: 99%;
+      left: 0;
+      right: 0;
+    }
+    p {
+      padding: 2%;
+    }
+  }
+
+  .middle-container {
+    width: auto;
+    height: 124%;
+  }
+
+  .information-block {
+    width: 100%;
+    height: 20%;
+    min-width: 100%;
+    min-height: 20%;
+  }
+
+  .bottom-container {
+    width: auto;
+    height: auto;
+  }
+}
